@@ -1,0 +1,30 @@
+{
+	"name" : "cmsgears/plugin-google-adsense",
+	"description" : "Google AdSense plugin for CMSGears provide options to configure google adsense.",
+	"homepage" : "http://www.cmsgears.org",
+	"type" : "package",
+	"keywords" : [
+		"yii2",
+		"cmsgears",
+		"plugin",
+		"analytics",
+		"google"
+	],
+	"license" : "GPLv3",
+	"support" : {
+		"source" : "http://www.cmsgears.org/downloads/plugins/google-adsense",
+		"forum" : "http://forum.cmsgears.org/",
+		"resources" : "http://resources.cmsgears.org/",
+		"issues" : "https://www.amazingdesk.com/cmsgears/issues/",
+		"blog" : "http://cmsgears.tutorials24x7.com/"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"cmsgears\\google\\adsense\\" : ""
+		}
+	},
+	"require" : {
+		"php" : ">=5.4.0",
+		"cmsgears/module-core" : "*"
+	}
+}
