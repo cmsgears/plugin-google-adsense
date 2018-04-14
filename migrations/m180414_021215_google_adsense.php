@@ -66,9 +66,9 @@ class m180414_021215_google_adsense extends Migration {
 		$this->insert( $this->prefix . 'core_form', [
 			'siteId' => $this->site->id,
 			'createdBy' => $this->master->id, 'modifiedBy' => $this->master->id,
-			'name' => 'Config File', 'slug' => 'config-file',
+			'name' => 'Config Google Adsense', 'slug' => 'config-google-adsense',
 			'type' => CoreGlobal::TYPE_SYSTEM,
-			'description' => 'File configuration form.',
+			'description' => 'Google adsense configuration form.',
 			'success' => 'All configurations saved successfully.',
 			'captcha' => false,
 			'visibility' => Form::VISIBILITY_PROTECTED,
@@ -77,7 +77,7 @@ class m180414_021215_google_adsense extends Migration {
 			'modifiedAt' => DateUtil::getDateTime()
 		] );
 
-		$config = Form::findBySlugType( 'config-file', CoreGlobal::TYPE_SYSTEM );
+		$config = Form::findBySlugType( 'config-google-adsense', CoreGlobal::TYPE_SYSTEM );
 
 		$columns = [ 'formId', 'name', 'label', 'type', 'compress', 'meta', 'active', 'validators', 'order', 'icon', 'htmlOptions' ];
 
@@ -108,7 +108,7 @@ class m180414_021215_google_adsense extends Migration {
 
 	public function down() {
 
-		echo "m160622_061028_file_manager will be deleted with m160621_014408_core.\n";
+		echo "m180414_021215_google_adsense will be deleted with m160621_014408_core.\n";
 
 		return true;
 	}
