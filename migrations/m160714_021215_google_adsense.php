@@ -24,7 +24,7 @@ use cmsgears\core\common\utilities\DateUtil;
  *
  * @since 1.0.0
  */
-class m180414_021215_google_adsense extends Migration {
+class m160714_021215_google_adsense extends Migration {
 
 	// Public Variables
 
@@ -108,7 +108,7 @@ class m180414_021215_google_adsense extends Migration {
 
 	public function down() {
 
-		echo "m180414_021215_google_adsense will be deleted with m160621_014408_core.\n";
+		echo "m160714_021215_google_adsense will be deleted with m160621_014408_core.\n";
 
 		return true;
 	}
